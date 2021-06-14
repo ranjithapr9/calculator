@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <form name="frmcalc">
+    <table class="center" >
+      <tr>
+      <td colspan="4">
+      <input type="text"class="txt"  name="txtDisplay" value="">
+      </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+         <input type="button" class="btn1"   value="C" onclick="frmcalc.txtDisplay.value=''">
+        </td>
+
+        <td>
+        <input type="button" class="btn"  value="%" onclick="frmcalc.txtDisplay.value+='%'">
+        </td>
+
+        <td>
+        <input type="button" class="op"  value="/" onclick="frmcalc.txtDisplay.value+='/'">
+        </td>
+
+      </tr>
+     <tr>
+
+        <td>
+        <input type="button" class="btn"  value="1" onclick="frmcalc.txtDisplay.value+='1'">
+        </td>
+
+        <td>
+        <input type="button" class="btn" value="2" onclick="frmcalc.txtDisplay.value+='2'">
+        </td>
+
+        <td>
+        <input type="button" class="btn"  value="3" onclick="frmcalc.txtDisplay.value+='3'">
+        </td>
+
+        <td>
+        <input type="button" class="op" value="+" onclick="frmcalc.txtDisplay.value+='+'">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+         <input type="button" class="btn"  value="4" onclick="frmcalc.txtDisplay.value+='4'">
+        </td>
+
+        <td>
+        <input type="button" class="btn"  value="5" onclick="frmcalc.txtDisplay.value+='5'">
+        </td>
+
+        <td>
+        <input type="button" class="btn"  value="6" onclick="frmcalc.txtDisplay.value+='6'">
+        </td>
+
+        <td>
+        <input type="button" class="op" value="-" onclick="frmcalc.txtDisplay.value+='-'">
+        </td>
+      </tr>
+
+
+
+      <tr>
+        <td>
+         <input type="button" class="btn"  value="7" onclick="frmcalc.txtDisplay.value+='7'">
+        </td>
+
+        <td>
+        <input type="button" class="btn"  value="8" onclick="frmcalc.txtDisplay.value+='8'">
+        </td>
+
+        <td>
+        <input type="button" class="btn"  value="9" onclick="frmcalc.txtDisplay.value+='9'">
+        </td>
+
+        <td>
+        <input type="button"  class="op" value="*" onclick="frmcalc.txtDisplay.value+='*'">
+        </td>
+      </tr>
+
+
+      <tr>
+
+
+        <td colspan="2">
+        <input type="button"  class="btn1"  value="0" onclick="frmcalc.txtDisplay.value+='0'">
+        </td>
+
+        <td>
+        <input type="button" class="btn"  value="." onclick="frmcalc.txtDisplay.value+='.'">
+        </td>
+
+        <td>
+        <input type="button" class="op"  value="=" onclick="frmcalc.txtDisplay.value=eval(frmcalc.txtDisplay.value)" >
+        </td>
+
+
+      </tr>
+    </table>
+   </form>
+
+  </body>
+</html>
